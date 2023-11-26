@@ -1,0 +1,128 @@
+  /* StartupLanding.css */
+
+  .landing-container {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 200px;
+    height: 85.5vh;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+  }
+  .Link{
+    text-decoration: none;
+  }
+  .sidebar-item:hover {
+    background-color: #1b518f;
+  }
+  
+  .active {
+    background-color: #1b518f;
+  }
+  
+  .workspace {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: scroll; 
+    /* height: 100%;Allow the workspace to scroll if needed */
+  }
+  
+  .workspace-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
+    height: 100%; /* Occupy full height of the workspace */
+  }
+/* Style for the top bar */
+.top-bar {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right end */
+  align-items: center; /* Vertically center the icon and dropdown */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the profile icon */
+.profile-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon i {
+  font-size: 30px;
+  color: #ffffff; /* Change the color to your preference */
+  margin-right: 28px; /* Adjust spacing as needed */
+}
+
+/* Style for the profile dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 40px; /* Position below the icon */
+  right: 0;
+  width: 200px; /* Adjust the width as needed */
+  background-color: #fff; /* Background color for the dropdown */
+  border: 1px solid #ccc; /* Border style for the dropdown */
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.profile-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  padding: 10px;
+  text-align: center;
+}
+
+.profile-dropdown li a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  display: block;
+  transition: background-color 0.2s ease; /* Smooth background color transition */
+}
+
+.profile-dropdown li a:hover {
+  background-color: #f5f5f5; /* Background color on hover */
+}
+
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  .notification-icon i{
+    font-size: 25px;
+  color: #ffffff; /* Change the color to your preference */
+  margin-right: 35px; 
+  }
+  
+  .notification-icon-open {
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Adjust color as needed */
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px; /* Adjust spacing as needed */
+  }
+  
